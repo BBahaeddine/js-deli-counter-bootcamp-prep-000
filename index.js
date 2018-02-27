@@ -21,9 +21,12 @@ function currentLine(katzDeliLine) {
     return "The line is currently empty.";
   } else {
     var message = "The line is currently:";
-    for(i = 0; i < katzDeliLine.length; i++) {
-      message += `${i}. ${katzDeliLine[i]},`;
-    }
+    katzDeliLine.foreach(function(element) {
+      message += i+". "+ element+",";
+    });
+    // for(i = 0; i < katzDeliLine.length; i++) {
+    //   message += `${i}. ${katzDeliLine[i]},`;
+    // }
     // console.log(message);
     
     return message;
