@@ -24,6 +24,7 @@ function currentLine(katzDeliLine) {
     for(i = 0; i < katzDeliLine.length; i++) {
       message += `${i}. ${katzDeliLine[i]},`;
     }
+    console.log(message);
     
     return message;
   }
