@@ -20,10 +20,12 @@ function currentLine(katzDeliLine) {
   if(katzDeliLine.length === 0) {
     return "The line is currently empty.";
   } else {
-    var message = ""
+    var message = "The line is currently:";
     for(i = 0; i < katzDeliLine.length; i++) {
-      
+      message += `${i}. ${katzDeliLine[i]},`;
     }
+    
+    return message;
   }
   
 }
